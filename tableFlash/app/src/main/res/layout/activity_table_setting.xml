@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".table_setting">
+
+    <TextView
+        android:id="@+id/table_setting_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Table"
+        android:textColor="#3F51B5"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <View
+        android:id="@+id/table_setting_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/table_setting_textView2"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <TextView
+        android:id="@+id/table_setting_textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Table #:"
+        android:textColor="#100E0E"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/table_setting_view"
+        app:layout_constraintVertical_bias="0.082" />
+
+    <EditText
+        android:id="@+id/table_setting_editText"
+        android:layout_width="120dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toEndOf="@+id/table_setting_textView4"
+        app:layout_constraintTop_toBottomOf="@+id/table_setting_view"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <TextView
+        android:id="@+id/table_setting_table_capacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seat Capacity:"
+        android:textColor="#100E0E"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/table_setting_textView4"
+        app:layout_constraintVertical_bias="0.094" />
+
+
+    <ImageButton
+        android:id="@+id/table_setting_minusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:adjustViewBounds="true"
+        android:background="#FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/table_setting_textView4"
+        app:layout_constraintVertical_bias="0.076"
+        app:srcCompat="@drawable/minus" />
+
+    <TextView
+        android:id="@+id/table_setting_capacity_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="#0EC8DF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toEndOf="@+id/table_setting_minusButton"
+        app:layout_constraintTop_toBottomOf="@+id/table_setting_editText"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <ImageButton
+        android:id="@+id/table_setting_addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:adjustViewBounds="true"
+        android:background="#FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toEndOf="@+id/table_setting_capacity_num"
+        app:layout_constraintTop_toBottomOf="@+id/table_setting_editText"
+        app:layout_constraintVertical_bias="0.05"
+        app:srcCompat="@drawable/add" />
+
+    <Spinner
+        android:id="@+id/table_setting_spinner_length"
+        android:layout_width="54dp"
+        android:layout_height="37dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.204"
+        app:layout_constraintStart_toEndOf="@+id/table_setting_textView8"
+        app:layout_constraintTop_toBottomOf="@+id/table_setting_capacity_num"
+        app:layout_constraintVertical_bias="0.112" />
+
+    <TextView
+        android:id="@+id/table_setting_textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Table Size:"
+        android:textColor="#100E0E"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/table_setting_table_capacity"
+        app:layout_constraintVertical_bias="0.112" />
+
+    <TextView
+        android:id="@+id/table_setting_textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Length:"
+        android:textColor="#100E0E"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toEndOf="@+id/table_setting_textView7"
+        app:layout_constraintTop_toBottomOf="@+id/table_setting_minusButton"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <TextView
+        android:id="@+id/table_setting_textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Width:"
+        android:textColor="#100E0E"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toEndOf="@+id/table_setting_textView7"
+        app:layout_constraintTop_toBottomOf="@+id/table_setting_textView8"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <Spinner
+        android:id="@+id/table_setting_spinner_width"
+        android:layout_width="54dp"
+        android:layout_height="37dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.204"
+        app:layout_constraintStart_toEndOf="@+id/table_setting_textView9"
+        app:layout_constraintTop_toBottomOf="@+id/table_setting_spinner_length"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <TextView
+        android:id="@+id/table_setting_length"
+        android:layout_width="54dp"
+        android:layout_height="41dp"
+        android:textColor="#100F0F"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/table_setting_spinner_width"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toEndOf="@+id/table_setting_textView8"
+        app:layout_constraintTop_toBottomOf="@+id/table_setting_capacity_num"
+        app:layout_constraintVertical_bias="0.597" />
+
+    <TextView
+        android:id="@+id/table_setting_width"
+        android:layout_width="54dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="24dp"
+        android:textColor="#100F0F"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toEndOf="@+id/table_setting_textView9"
+        app:layout_constraintTop_toBottomOf="@+id/table_setting_length" />
+
+    <Button
+        android:id="@+id/table_setting_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F84040"
+        android:text="Remove Table"
+        android:textAllCaps="false"
+        android:textColor="#F4F1F1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/table_setting_textView9"
+        app:layout_constraintVertical_bias="0.139" />
+
+    <Button
+        android:id="@+id/table_setting_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#96F187"
+        android:text="OK"
+        android:textAllCaps="false"
+        android:textColor="#F1EEEE"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/table_setting_textView9"
+        app:layout_constraintVertical_bias="0.139" />
+
+    <Button
+        android:id="@+id/table_setting_Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/table_setting_textView9"
+        app:layout_constraintVertical_bias="0.139" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
